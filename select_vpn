@@ -23,7 +23,7 @@ tell application "System Events"
   tell current location of network preferences
     set is_connected to connected of current configuration of service "$service"
     if is_connected then
-        set result to "<subtitle>Dicconnect $service</subtitle>"
+        set result to "<subtitle>Disconnect $service</subtitle>"
     else
         set result to "<subtitle>Connect $service</subtitle>"
     end if
